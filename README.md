@@ -1,4 +1,4 @@
-# Todo App Moderno
+# To do App Moderno
 
 ## 📌 Descrição
 Este é um aplicativo de lista de tarefas (To-Do List) moderno, desenvolvido com HTML, CSS e JavaScript. Ele permite adicionar, remover e limpar tarefas, além de armazená-las no Local Storage para que não sejam perdidas ao atualizar a página.
