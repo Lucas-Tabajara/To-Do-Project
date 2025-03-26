@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 20px;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper header {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #2a5298;
+}
+
+.inputField {
+  margin: 20px 0;
+  display: flex;
+  height: 50px;
+}
+
+.inputField input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.inputField input:focus {
+  border-color: #2a5298;
+  outline: none;
+}
+
+.inputField button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  background: #2a5298;
+  margin-left: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inputField button:hover {
+  background: #1e3c72;
+}
+
+.todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.todoList li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 10px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.todoList li:hover {
+  background: #e3e3e3;
+}
+
+.todoList li .icon {
+  color: #ff4d4d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todoList li .icon:hover {
+  color: #cc0000;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer span {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer button:hover {
+  background: #cc0000;
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .inputField {
+    flex-direction: column;
+    height: auto;
+  }
+  .inputField input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .inputField button {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
